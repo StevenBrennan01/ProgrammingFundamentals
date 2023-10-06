@@ -1,30 +1,60 @@
 #include <iostream>
+#include <string>
 
-void main()
+using namespace std;
+
+int main()
 {
-    //Make a program which converts any given string to sentence
-    //case. For example:
+#pragma region Uppercase Fix
+    string input;
 
-    // Please enter some text: hello this is a sentence. and here is another. and another.
-    //
-    // > Hello this is a sentence. And here is another. And another.
+    cout << "Enter a sentence : \n";
 
-    //The program should be able to work regardless of whitespace between
-    //period characters. Note that proper nouns shouldn't be considered here, just
-    //the rule that if a character is after a period, it should be capitalised.
+    getline(cin, input);
 
-    //Additionally, you should expand the solution to:
-    //
-    // - Show the given text in sentence case, lowercase, or uppercase
-    // - Detect if the text has no alphabetical characters, and if so, show a warning
-    //
-    // e.g.
+    for (int i = 0; i < input.length(); i++)
+    {
+        input[0] = toupper(input[0]);
 
-    // Please enter some text: hello this is another sentence. blah. something else.
-    //
-    // - Sentence case: Hello this is another sentence. Blah. Something else.
-    // - Lowercase: hello this is another sentence. blah. something else.
-    // - Uppercase: HELLO THIS IS ANOTHER SENTENCE. BLAH. SOMETHING ELSE.
-    //
+        if (input[i] == '.')
+        {
+            if (input[i + 1] == ' ')
+            {
+                input[i + 2] = toupper(input[i + 2]);
 
+            }
+            else
+            {
+                input.insert(i + 1, " ");
+                input[i + 2] = toupper(input[i + 2]);
+
+            }
+        }
+    }
+#pragma endregion
+
+#pragma region Lowercase Fix
+    string lower = input;
+
+    for (int i = 0; i < lower.length(); i++)
+    {
+        lower[i] = tolower(lower[i]);
+    }
+#pragma endregion
+
+
+#pragma region Uppercase Fix
+    string upper = input;
+
+    for (int i = 0; i < upper.length(); i++)
+    {
+        upper[i] = toupper(upper[i]);
+    }
+#pragma endregion
+
+#pragma region Printer
+    cout << "Sentence Case: " << input << endl;
+    cout << "Lowercase: " << lower << endl;
+    cout << "Uppercase: " << upper << endl;
+#pragma endregion
 }

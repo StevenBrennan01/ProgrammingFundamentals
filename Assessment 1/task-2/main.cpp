@@ -11,7 +11,7 @@ int main()
 
     cin >> myName;
 #pragma endregion
-
+    
 #pragma region SURNAME
     string mySurname;
 

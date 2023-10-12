@@ -1,21 +1,16 @@
+#include <iostream>
 #include "main.h"
-
 using namespace std;
 
 void main()
-{
-    void main()
     {
 
         int guessNum = 0;
         int guessTries = 0;
         const int randomNum = random(0, 100);
 
-        cout << randomNum << endl;
-
         cout << "I'm thinking of a number between 0 and 100...\n"; //Printing a string to ask user for their guess
         cout << "Please enter your guess: ";
-
 
         do
         {
@@ -87,8 +82,6 @@ void main()
         cout << "Correct answer!\n";
         cout << "Attempts: " << guessTries;
     }
-
-}
 
     //The code in this file has been produced to show you how to seed
     //a random number generator, and use it. In main.h, we are using

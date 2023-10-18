@@ -1,11 +1,77 @@
 #include <iostream>
 
+using namespace std;
+
 void main()
 {
+
+    int input;
+
+    cout << "Please choose a character class below:" << endl;
+    cout << "1. Spearman" << endl;
+    cout << "2. Knight" << endl;
+    cout << "3. Archer" << endl;
+
+    cin >> input;
+
+    while (true)
+    {
+        switch (input)
+    {
+    case(1):
+        cout << "You have chosen Spearman!";
+        break;
+    case(2):
+        cout << "You have chosen Knight!";
+        break;
+    case(3):
+        cout << "You have chosen Archer!";
+        break;
+
+    default:
+        cout << "Please make a valid choice" << endl;
+        cin >> input;
+        break;
+    }
+
+
+
+
+
+
+
+
+
+
+    
+    /*switch (input)
+    {
+    case(1):
+        cout << "You have chosen Spearman!";
+        break;
+    case(2):
+        cout << "You have chosen Knight!";
+        break;
+    case(3):
+        cout << "You have chosen Archer!";
+        break;
+
+    default:
+        cout << "Please make a valid choice" << endl;
+        cin >> input;
+        break;
+    } */
+
+    //cout << "Please make a valid choice." << endl;
+    //cin >> input;
+
+}
+
     //Using structs and arrays, build a character class and name selection system
     //for a text-based game. The program should firstly prompt the user for a class
-    //using a numbered menu system. For example:
+    //using a numbered menu system.~
 
+    // For example:   
     // Please choose a character class below:
     // 1. Spearman
     // 2. Knight
@@ -30,4 +96,3 @@ void main()
     // Player details:
     // - Name: ben
     // - Class: Knight
-}

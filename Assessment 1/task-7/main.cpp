@@ -17,55 +17,46 @@ void main()
     while (true)
     {
         switch (input)
-    {
-    case(1):
-        cout << "You have chosen Spearman!";
-        break;
-    case(2):
-        cout << "You have chosen Knight!";
-        break;
-    case(3):
-        cout << "You have chosen Archer!";
-        break;
+        {
+        case(1):
+            cout << "You have chosen Spearman!";
+            break;
+        case(2):
+            cout << "You have chosen Knight!";
+            break;
+        case(3):
+            cout << "You have chosen Archer!";
+            break;
 
-    default:
-        cout << "Please make a valid choice" << endl;
-        cin >> input;
-        break;
+        default:
+            cout << "Please make a valid choice" << endl;
+            cin >> input;
+            break;
+        }
     }
 
-
-
-
-
-
-
-
-
-
+}
     
-    /*switch (input)
-    {
-    case(1):
-        cout << "You have chosen Spearman!";
-        break;
-    case(2):
-        cout << "You have chosen Knight!";
-        break;
-    case(3):
-        cout << "You have chosen Archer!";
-        break;
+    //switch (input)
+    //{
+    //case(1):
+    //    cout << "You have chosen Spearman!";
+    //    break;
+    //case(2):
+    //    cout << "You have chosen Knight!";
+    //    break;
+    //case(3):
+    //    cout << "You have chosen Archer!";
+    //    break;
 
-    default:
-        cout << "Please make a valid choice" << endl;
-        cin >> input;
-        break;
-    } */
+    //default:
+    //    cout << "Please make a valid choice" << endl;
+    //    cin >> input;
+    //    break;
+    //} 
 
     //cout << "Please make a valid choice." << endl;
     //cin >> input;
-
-}
 
     //Using structs and arrays, build a character class and name selection system
     //for a text-based game. The program should firstly prompt the user for a class

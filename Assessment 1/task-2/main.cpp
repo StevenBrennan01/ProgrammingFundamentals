@@ -7,23 +7,15 @@ int main()
 #pragma region NAME
     string myName;
 
-    cout << "Please enter your name:" << endl;
+    cout << "Please enter your name: ";
 
     cin >> myName;
-#pragma endregion
-    
-#pragma region SURNAME
-    string mySurname;
-
-    cout << "Please enter your surname:" << endl;
-
-    cin >> mySurname;
 #pragma endregion
 
 #pragma region CLAN
     string myClan;
 
-    cout << "Please enter your clan tag:" << endl;
+    cout << "Please enter your clan tag: ";
 
     cin >> myClan;
 
@@ -32,7 +24,7 @@ int main()
 #pragma region USERNAME
     string myUsername;
 
-    cout << "Please enter your username:" << endl;
+    cout << "Please enter your username: ";
 
     cin >> myUsername;
 #pragma endregion
@@ -40,18 +32,22 @@ int main()
 #pragma region AGE
     string myAge;
 
-    cout << "Please enter your age:" << endl;
+    cout << "Please enter your age: ";
 
     cin >> myAge;
 #pragma endregion
 
 #pragma region DETAILS
 
+    //cout << "Player details:" << endl;
+    //cout << "Name:" << myName << endl;
+    //cout << "Clan:" << myClan << endl;
+    //cout << "Username:" << myUsername << endl;
+    //cout << "Age:" << myAge << endl;
+
     cout << "Player details:" << endl;
     cout << "Name:" << myName << endl;
-    cout << "Surname:" << mySurname << endl;
-    cout << "Clan:" << myClan << endl;
-    cout << "Username:" << myUsername << endl;
+    cout << "Username:" << "[" << myClan << "]" << myUsername << endl;
     cout << "Age:" << myAge << endl;
 
 #pragma endregion

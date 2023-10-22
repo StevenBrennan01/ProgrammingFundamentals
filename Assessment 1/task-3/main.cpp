@@ -15,6 +15,4 @@ int main() {
     float result = myInput * Squarer;
 
     cout << result << endl;
-
-    return 0;
 }

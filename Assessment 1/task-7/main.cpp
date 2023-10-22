@@ -1,62 +1,58 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 void main()
 {
 
-    int input;
+    int charClass[3] = {1,2,3};
+    int classChoice;
+    string userName;
+    string userClass;
 
     cout << "Please choose a character class below:" << endl;
     cout << "1. Spearman" << endl;
     cout << "2. Knight" << endl;
     cout << "3. Archer" << endl;
 
-    cin >> input;
-
     while (true)
     {
-        switch (input)
+        cin >> classChoice;
+
+        switch (classChoice)
         {
         case(1):
-            cout << "You have chosen Spearman!";
+            cout << "You have chosen Spearman!" << endl;
+            userClass = "Spearman";
             break;
         case(2):
-            cout << "You have chosen Knight!";
+            cout << "You have chosen Knight!" << endl;
+            userClass = "Knight";
             break;
         case(3):
-            cout << "You have chosen Archer!";
+            cout << "You have chosen Archer!" << endl;
+            userClass = "Archer";
             break;
 
         default:
             cout << "Please make a valid choice" << endl;
-            cin >> input;
+            cin >> classChoice;
             break;
         }
+
+        cout << "" << endl;
+        cout << "Please enter your name: ";
+
+        cin >> userName;
+
+        cout << "" << endl;
+        cout << "Player details:" << endl;
+        cout << "- Name: " << userName << endl;
+        cout << "- Class: " << userClass << endl;
+
     }
-
 }
-    
-    //switch (input)
-    //{
-    //case(1):
-    //    cout << "You have chosen Spearman!";
-    //    break;
-    //case(2):
-    //    cout << "You have chosen Knight!";
-    //    break;
-    //case(3):
-    //    cout << "You have chosen Archer!";
-    //    break;
-
-    //default:
-    //    cout << "Please make a valid choice" << endl;
-    //    cin >> input;
-    //    break;
-    //} 
-
-    //cout << "Please make a valid choice." << endl;
-    //cin >> input;
 
     //Using structs and arrays, build a character class and name selection system
     //for a text-based game. The program should firstly prompt the user for a class

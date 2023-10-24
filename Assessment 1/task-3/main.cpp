@@ -6,13 +6,11 @@ int main() {
 
     float myInput;
 
-    cout << "Gimme Input *BEEP* *BOOP*" << endl;
+    cout << "Gimme Input" << endl;
     cin >> myInput;
     cout << " " << endl;
 
-    float Squarer = myInput;
-
-    float result = myInput * Squarer;
+    float result = myInput * myInput;
 
     cout << result << endl;
 }

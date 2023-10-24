@@ -10,7 +10,7 @@ int main()
 
     cout << "Please enter some text: ";
 
-    getline(cin, userInput);
+    cin >> userInput;
 
     int asteriskSize = userInput.length() + 4;
 

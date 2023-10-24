@@ -6,6 +6,36 @@ using namespace std;
 void main()
 {
 
+    // a struct needs to be used in some form in this task
+
+    //-- 
+    /*struct ClassChoice
+    {
+        string name;
+        string className;
+    };
+
+    ClassChoice choices[5];
+    choices[0].name = "Spearman";   
+    choices[1].name = "Knight";
+    choices[2].name = "Archer";
+
+    for (int i = 0; i < _countof(choices); i++)
+    {
+        cout << (i + 1) << ". " << choices[i].name << endl;
+    }
+    
+    int choice = 0;
+    cout << "Choose one of the above" << endl;
+    cin >> choice;
+
+    //Do some error detection: is choice > the number of elements in the array? is it less than 0? If so, tell them to re-enter
+
+    cout << choices[choice].name << endl; 
+    
+    */
+    //--
+     
     int charClass[3] = {1,2,3};
     int classChoice;
     string userName;

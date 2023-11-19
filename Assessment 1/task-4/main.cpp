@@ -18,3 +18,5 @@ int main()
     cout << "* " << userInput << " *" << endl;
     cout << string(asteriskSize, '*') << endl;
 }
+
+

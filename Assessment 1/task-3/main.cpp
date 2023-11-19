@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -6,11 +7,21 @@ int main() {
 
     float myInput;
 
-    cout << "Gimme Input" << endl;
+    cout << "Please input the number you'd like to square" << endl;
     cin >> myInput;
-    cout << " " << endl;
+
+
 
     float result = myInput * myInput;
 
     cout << result << endl;
+
+
+    //float userInput;
+
+    //cout << "Input number" << endl;
+    //cin >> userInput;
+
+    //if (userInput == );
+
 }

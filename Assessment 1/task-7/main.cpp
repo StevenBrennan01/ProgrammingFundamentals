@@ -6,84 +6,41 @@ using namespace std;
 void main()
 {
 
-    // a struct needs to be used in some form in this task
-
-    //-- 
-    /*struct ClassChoice
+    struct ClassChoice
     {
-        string name;
-        string className;
+        string userName;
+        string UserClass;
     };
 
-    ClassChoice choices[5];
-    choices[0].name = "Spearman";   
-    choices[1].name = "Knight";
-    choices[2].name = "Archer";
-
-    for (int i = 0; i < _countof(choices); i++)
-    {
-        cout << (i + 1) << ". " << choices[i].name << endl;
-    }
-    
-    int choice = 0;
-    cout << "Choose one of the above" << endl;
-    cin >> choice;
-
-    //Do some error detection: is choice > the number of elements in the array? is it less than 0? If so, tell them to re-enter
-
-    cout << choices[choice].name << endl; 
-    
-    */
-    //--
-     
     int charClass[3] = {1,2,3};
-    int classChoice;
+    int classChoice = 0;
     string userName;
     string userClass;
 
-    cout << "Please choose a character class below:" << endl;
-    cout << "1. Spearman" << endl;
-    cout << "2. Knight" << endl;
-    cout << "3. Archer" << endl;
+    ClassChoice choices[4];
+    choices[1].UserClass = "Spearman";
+    choices[2].UserClass = "Knight";
+    choices[3].UserClass = "Archer";
 
-    while (true)
+    for (int i = 1; i < _countof(choices); i++)
     {
-        cin >> classChoice;
-
-        switch (classChoice)
-        {
-        case(1):
-            cout << "You have chosen Spearman!" << endl;
-            userClass = "Spearman";
-            break;
-        case(2):
-            cout << "You have chosen Knight!" << endl;
-            userClass = "Knight";
-            break;
-        case(3):
-            cout << "You have chosen Archer!" << endl;
-            userClass = "Archer";
-            break;
-
-        default:
-            cout << "Please make a valid choice" << endl;
-            cin >> classChoice;
-            break;
-        }
-
-        cout << "" << endl;
-        cout << "Please enter your name: ";
-
-        cin >> userName;
-
-        cout << "" << endl;
-        cout << "Player details:" << endl;
-        cout << "- Name: " << userName << endl;
-        cout << "- Class: " << userClass << endl;
-
+        cout << (i) << ". " << choices[i].UserClass << endl;
     }
-}
 
+    int choice = 0;
+    cout << "Choose a class: " << endl;
+    cin >> choice;
+
+    cout << "Please enter your name: ";
+    cin >> userName;
+
+    //Do some error detection: is choice > the number of elements in the array? is it less than 0? If so, tell them to re-enter
+
+    cout << "Player Details: " << endl;
+    cout << "- Name: " << userName << endl;
+    cout << "- Class: " << choices[choice].UserClass << endl;
+
+}
     //Using structs and arrays, build a character class and name selection system
     //for a text-based game. The program should firstly prompt the user for a class
     //using a numbered menu system.~

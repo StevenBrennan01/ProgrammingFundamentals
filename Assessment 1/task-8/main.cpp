@@ -2,6 +2,15 @@
 
 void main()
 {
+
+
+
+
+
+
+
+
+
     //In this challenge, you should build an inventory system using a dynamically
     //allocated array of structs.
 

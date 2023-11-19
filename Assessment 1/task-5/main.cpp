@@ -9,7 +9,7 @@ int main()
     string input;
 
     cout << "Enter a sentence : \n";
-
+    
     getline(cin, input);
 
     for (int i = 0; i < input.length(); i++)
@@ -52,7 +52,7 @@ int main()
     }
 #pragma endregion
 
-#pragma region Printer
+#pragma region Output
     cout << "Sentence Case: " << input << endl;
     cout << "Lowercase: " << lower << endl;
     cout << "Uppercase: " << upper << endl;

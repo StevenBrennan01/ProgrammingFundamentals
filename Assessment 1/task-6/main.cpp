@@ -68,7 +68,7 @@ void main()
 
             if (guessDiff <= 2 && guessDiff != 0)
             {
-                cout << "Boling" << endl;
+                cout << "Boiling" << endl;
                 cout << " " << endl;
             }
 
@@ -79,9 +79,15 @@ void main()
 
         } while (guessNum != randomNum);
 
-        cout << "Correct answer!\n";
-        cout << "Attempts: " << guessTries;
+        cout << "Correct answer! The answer was " << randomNum << endl;
+        cout << "Total number of guesses: " << guessTries;
+
+         //i believe doing this with a switch case statement would be a nicer way of laying this task out, however i completed this task before discovering switch cases.
+         //if i have time i will try this task again.
+
     }
+
+
 
     //The code in this file has been produced to show you how to seed
     //a random number generator, and use it. In main.h, we are using

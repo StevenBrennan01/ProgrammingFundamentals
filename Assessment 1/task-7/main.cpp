@@ -13,9 +13,7 @@ void main()
     };
 
     int charClass[3] = {1,2,3};
-    int classChoice = 0;
     string userName;
-    string userClass;
 
     ClassChoice choices[4];
     choices[1].UserClass = "Spearman";

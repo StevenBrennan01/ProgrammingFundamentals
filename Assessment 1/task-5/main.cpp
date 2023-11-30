@@ -5,12 +5,12 @@ using namespace std;
 
 int main()
 {
-#pragma region Uppercase Fix
+#pragma region Sentence Case Fix
     string input;
 
     cout << "Enter a sentence : \n";
     
-    getline(cin, input);
+    getline(cin, input); //getline will fetch the whole line, whereas a cin will fetch everything before a break or space.
 
     for (int i = 0; i < input.length(); i++)
     {

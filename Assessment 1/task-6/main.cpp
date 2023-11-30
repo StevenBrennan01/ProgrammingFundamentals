@@ -30,7 +30,7 @@ void main()
                 cout << " " << endl;
             }
 
-            if (guessDiff <= 50 && guessDiff > 35) // try using || instead of && here also, is there a difference?
+            if (guessDiff <= 50 && guessDiff > 35) // || means or and && means and
             {
                 cout << "Freezing" << endl;
                 cout << " " << endl;

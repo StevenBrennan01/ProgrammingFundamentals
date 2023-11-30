@@ -39,12 +39,6 @@ int main()
 
 #pragma region DETAILS
 
-    //cout << "Player details:" << endl;
-    //cout << "Name:" << myName << endl;
-    //cout << "Clan:" << myClan << endl;
-    //cout << "Username:" << myUsername << endl;
-    //cout << "Age:" << myAge << endl;
-
     cout << "Player details:" << endl;
     cout << "Name:" << myName << endl;
     cout << "Username:" << "[" << myClan << "]" << myUsername << endl;

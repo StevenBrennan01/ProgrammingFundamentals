@@ -10,18 +10,9 @@ int main() {
     cout << "Please input the number you'd like to square" << endl;
     cin >> myInput;
 
-
-
     float result = myInput * myInput;
 
-    cout << result << endl;
 
-
-    //float userInput;
-
-    //cout << "Input number" << endl;
-    //cin >> userInput;
-
-    //if (userInput == );
+    cout << myInput << " Squared is " << result << endl;
 
 }

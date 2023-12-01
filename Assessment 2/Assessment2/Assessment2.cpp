@@ -13,7 +13,6 @@ int main()
 	int choiceTries = 0;
 	string userChoice;
 	string kick = "kick";
-	string unkick = "unkick";
 
 #pragma region INTRO
 
@@ -73,10 +72,10 @@ int main()
 	cout << "Careful here " << userName << ", we might be out but guards are crawling all over this place...\n";
 		Sleep(3000);
 	cout << "	" << endl; //spacing the outputs here.
-	cout << "Ok, think it's clear..."; Sleep(2000);
+	cout << "Ok, think it's clear..."; Sleep(1500);
 	cout << "what should we do here?" << endl;
 	cout << "	" << endl;
-		Sleep(2000);
+		Sleep(1500);
 	
 
 	int inputChoice = 0;
@@ -92,15 +91,10 @@ int main()
 	}
 
 	cin >> inputChoice;
+	
 
 	while (inputChoice != 1 || 2)
 	{
-		if (inputChoice != 1 || 2);
-		{
-			cout << "Huh? I said what should we do?\n";
-			cin >> inputChoice;
-		}
-
 		if (inputChoice == 1)
 		{
 			cout << "Ok, let's see if we can make it to that door\n";
@@ -108,15 +102,30 @@ int main()
 			cout << "*You manage to sneak past the guards, up the stairs, and out the gate*\n";
 			break;
 		}
-
 		if (inputChoice == 2)
 		{
 			cout << "Ok, let's have a look around here first, just be careful\n";
 			Sleep(2000);
-			cout << "*You found a small dagger*\n"; Sleep(2000);
+			cout << "*You found a small dagger on your way out*\n"; Sleep(2000);
 			break;
 		}
+		else if (inputChoice != 1 || 2)
+		{
+			cout << "Huh? I said what should we do?\n";
+			cin >> inputChoice;
+		}
 	}
+
+	bool ifKnife; //detecting if player found knife or not
+	ifKnife = false;
+
+	cout << "Ok, looks like we're out, but we're not in the clear yet...\n"; Sleep(2000);
+	cout << " ";
+	cout << "*You both make your way further from the prison, sticking to the shadows...";
+
+
+
+
 
 #pragma	endregion 
 }

@@ -123,8 +123,10 @@ int main()
 	cout << " ";
 	cout << "*You both make your way further from the prison, sticking to the shadows...";
 
+	Sleep(2000);
+	cout << "                               =-=-=-=-=-=-=-= Thank you for playing =-=-=-=-=-=-=-=" << endl;
 
-
+	//had to cut it short here due to time constraints, will continue to develop this.
 
 
 #pragma	endregion 
